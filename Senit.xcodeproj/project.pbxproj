@@ -14,9 +14,9 @@
 		048A50C920CB155F0080E868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048A50C720CB155F0080E868 /* LaunchScreen.storyboard */; };
 		048A50D420CB15600080E868 /* SenitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A50D320CB15600080E868 /* SenitTests.swift */; };
 		048A50DF20CB15600080E868 /* SenitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A50DE20CB15600080E868 /* SenitUITests.swift */; };
-		048A50F120CB1E340080E868 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 048A50F020CB1E330080E868 /* Podfile */; };
+		048A50F320CB21B70080E868 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A50F220CB21B70080E868 /* LoginScreenViewController.swift */; };
+		048A50F520CB221B0080E868 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A50F420CB221B0080E868 /* RegisterViewController.swift */; };
 		11B5BFDF6C7E557BD9115659 /* Pods_SenitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1FE475989E91D22E92B1A01 /* Pods_SenitUITests.framework */; };
-		401CCB206A48F072927209E4 /* Pods_Senit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A9170C78A6C2E1651E0BF7 /* Pods_Senit.framework */; };
 		D3E3D7E6A4BECE80C823E6B3 /* Pods_SenitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2923CB17E08A05DEAEBBF21B /* Pods_SenitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,8 @@
 		048A50DA20CB15600080E868 /* SenitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SenitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		048A50DE20CB15600080E868 /* SenitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenitUITests.swift; sourceTree = "<group>"; };
 		048A50E020CB15600080E868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		048A50F020CB1E330080E868 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		048A50F220CB21B70080E868 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		048A50F420CB221B0080E868 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2923CB17E08A05DEAEBBF21B /* Pods_SenitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SenitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D2A49E861D117EA766F2A9 /* Pods-Senit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Senit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Senit/Pods-Senit.release.xcconfig"; sourceTree = "<group>"; };
 		4015D73B1AE127764695A540 /* Pods-Senit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Senit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Senit/Pods-Senit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				401CCB206A48F072927209E4 /* Pods_Senit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,6 @@
 		048A50B220CB155E0080E868 = {
 			isa = PBXGroup;
 			children = (
-				048A50F020CB1E330080E868 /* Podfile */,
 				048A50BD20CB155E0080E868 /* Senit */,
 				048A50D220CB15600080E868 /* SenitTests */,
 				048A50DD20CB15600080E868 /* SenitUITests */,
@@ -123,6 +122,8 @@
 				048A50C520CB155F0080E868 /* Assets.xcassets */,
 				048A50C720CB155F0080E868 /* LaunchScreen.storyboard */,
 				048A50CA20CB155F0080E868 /* Info.plist */,
+				048A50F220CB21B70080E868 /* LoginScreenViewController.swift */,
+				048A50F420CB221B0080E868 /* RegisterViewController.swift */,
 			);
 			path = Senit;
 			sourceTree = "<group>";
@@ -277,7 +278,6 @@
 			files = (
 				048A50C920CB155F0080E868 /* LaunchScreen.storyboard in Resources */,
 				048A50C620CB155F0080E868 /* Assets.xcassets in Resources */,
-				048A50F120CB1E340080E868 /* Podfile in Resources */,
 				048A50C420CB155E0080E868 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +362,8 @@
 			files = (
 				048A50C120CB155E0080E868 /* ViewController.swift in Sources */,
 				048A50BF20CB155E0080E868 /* AppDelegate.swift in Sources */,
+				048A50F320CB21B70080E868 /* LoginScreenViewController.swift in Sources */,
+				048A50F520CB221B0080E868 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
