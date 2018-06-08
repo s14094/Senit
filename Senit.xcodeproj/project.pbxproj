@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		048A50BF20CB155E0080E868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A50BE20CB155E0080E868 /* AppDelegate.swift */; };
+		048A50C120CB155E0080E868 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A50C020CB155E0080E868 /* ViewController.swift */; };
+		048A50C420CB155E0080E868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048A50C220CB155E0080E868 /* Main.storyboard */; };
+		048A50C620CB155F0080E868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048A50C520CB155F0080E868 /* Assets.xcassets */; };
+		048A50C920CB155F0080E868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048A50C720CB155F0080E868 /* LaunchScreen.storyboard */; };
+		048A50D420CB15600080E868 /* SenitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A50D320CB15600080E868 /* SenitTests.swift */; };
+		048A50DF20CB15600080E868 /* SenitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A50DE20CB15600080E868 /* SenitUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		048A50D020CB15600080E868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 048A50B320CB155E0080E868 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 048A50BA20CB155E0080E868;
+			remoteInfo = Senit;
+		};
+		048A50DB20CB15600080E868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 048A50B320CB155E0080E868 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 048A50BA20CB155E0080E868;
+			remoteInfo = Senit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		048A50BB20CB155E0080E868 /* Senit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Senit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		048A50BE20CB155E0080E868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		048A50C020CB155E0080E868 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		048A50C320CB155E0080E868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		048A50C520CB155F0080E868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		048A50C820CB155F0080E868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		048A50CA20CB155F0080E868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048A50CF20CB15600080E868 /* SenitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SenitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		048A50D320CB15600080E868 /* SenitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenitTests.swift; sourceTree = "<group>"; };
+		048A50D520CB15600080E868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048A50DA20CB15600080E868 /* SenitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SenitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		048A50DE20CB15600080E868 /* SenitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenitUITests.swift; sourceTree = "<group>"; };
+		048A50E020CB15600080E868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		048A50B820CB155E0080E868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048A50CC20CB15600080E868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048A50D720CB15600080E868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		048A50B220CB155E0080E868 = {
+			isa = PBXGroup;
+			children = (
+				048A50BD20CB155E0080E868 /* Senit */,
+				048A50D220CB15600080E868 /* SenitTests */,
+				048A50DD20CB15600080E868 /* SenitUITests */,
+				048A50BC20CB155E0080E868 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		048A50BC20CB155E0080E868 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				048A50BB20CB155E0080E868 /* Senit.app */,
+				048A50CF20CB15600080E868 /* SenitTests.xctest */,
+				048A50DA20CB15600080E868 /* SenitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		048A50BD20CB155E0080E868 /* Senit */ = {
+			isa = PBXGroup;
+			children = (
+				048A50BE20CB155E0080E868 /* AppDelegate.swift */,
+				048A50C020CB155E0080E868 /* ViewController.swift */,
+				048A50C220CB155E0080E868 /* Main.storyboard */,
+				048A50C520CB155F0080E868 /* Assets.xcassets */,
+				048A50C720CB155F0080E868 /* LaunchScreen.storyboard */,
+				048A50CA20CB155F0080E868 /* Info.plist */,
+			);
+			path = Senit;
+			sourceTree = "<group>";
+		};
+		048A50D220CB15600080E868 /* SenitTests */ = {
+			isa = PBXGroup;
+			children = (
+				048A50D320CB15600080E868 /* SenitTests.swift */,
+				048A50D520CB15600080E868 /* Info.plist */,
+			);
+			path = SenitTests;
+			sourceTree = "<group>";
+		};
+		048A50DD20CB15600080E868 /* SenitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				048A50DE20CB15600080E868 /* SenitUITests.swift */,
+				048A50E020CB15600080E868 /* Info.plist */,
+			);
+			path = SenitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		048A50BA20CB155E0080E868 /* Senit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048A50E320CB15600080E868 /* Build configuration list for PBXNativeTarget "Senit" */;
+			buildPhases = (
+				048A50B720CB155E0080E868 /* Sources */,
+				048A50B820CB155E0080E868 /* Frameworks */,
+				048A50B920CB155E0080E868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Senit;
+			productName = Senit;
+			productReference = 048A50BB20CB155E0080E868 /* Senit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		048A50CE20CB15600080E868 /* SenitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048A50E620CB15600080E868 /* Build configuration list for PBXNativeTarget "SenitTests" */;
+			buildPhases = (
+				048A50CB20CB15600080E868 /* Sources */,
+				048A50CC20CB15600080E868 /* Frameworks */,
+				048A50CD20CB15600080E868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				048A50D120CB15600080E868 /* PBXTargetDependency */,
+			);
+			name = SenitTests;
+			productName = SenitTests;
+			productReference = 048A50CF20CB15600080E868 /* SenitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		048A50D920CB15600080E868 /* SenitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048A50E920CB15600080E868 /* Build configuration list for PBXNativeTarget "SenitUITests" */;
+			buildPhases = (
+				048A50D620CB15600080E868 /* Sources */,
+				048A50D720CB15600080E868 /* Frameworks */,
+				048A50D820CB15600080E868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				048A50DC20CB15600080E868 /* PBXTargetDependency */,
+			);
+			name = SenitUITests;
+			productName = SenitUITests;
+			productReference = 048A50DA20CB15600080E868 /* SenitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		048A50B320CB155E0080E868 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					048A50BA20CB155E0080E868 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					048A50CE20CB15600080E868 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 048A50BA20CB155E0080E868;
+					};
+					048A50D920CB15600080E868 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 048A50BA20CB155E0080E868;
+					};
+				};
+			};
+			buildConfigurationList = 048A50B620CB155E0080E868 /* Build configuration list for PBXProject "Senit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 048A50B220CB155E0080E868;
+			productRefGroup = 048A50BC20CB155E0080E868 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				048A50BA20CB155E0080E868 /* Senit */,
+				048A50CE20CB15600080E868 /* SenitTests */,
+				048A50D920CB15600080E868 /* SenitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		048A50B920CB155E0080E868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048A50C920CB155F0080E868 /* LaunchScreen.storyboard in Resources */,
+				048A50C620CB155F0080E868 /* Assets.xcassets in Resources */,
+				048A50C420CB155E0080E868 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048A50CD20CB15600080E868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048A50D820CB15600080E868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		048A50B720CB155E0080E868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048A50C120CB155E0080E868 /* ViewController.swift in Sources */,
+				048A50BF20CB155E0080E868 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048A50CB20CB15600080E868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048A50D420CB15600080E868 /* SenitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048A50D620CB15600080E868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048A50DF20CB15600080E868 /* SenitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		048A50D120CB15600080E868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 048A50BA20CB155E0080E868 /* Senit */;
+			targetProxy = 048A50D020CB15600080E868 /* PBXContainerItemProxy */;
+		};
+		048A50DC20CB15600080E868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 048A50BA20CB155E0080E868 /* Senit */;
+			targetProxy = 048A50DB20CB15600080E868 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		048A50C220CB155E0080E868 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				048A50C320CB155E0080E868 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		048A50C720CB155F0080E868 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				048A50C820CB155F0080E868 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		048A50E120CB15600080E868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		048A50E220CB15600080E868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		048A50E420CB15600080E868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2PYB66VVW;
+				INFOPLIST_FILE = Senit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = npp.Senit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		048A50E520CB15600080E868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2PYB66VVW;
+				INFOPLIST_FILE = Senit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = npp.Senit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		048A50E720CB15600080E868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2PYB66VVW;
+				INFOPLIST_FILE = SenitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = npp.SenitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senit.app/Senit";
+			};
+			name = Debug;
+		};
+		048A50E820CB15600080E868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2PYB66VVW;
+				INFOPLIST_FILE = SenitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = npp.SenitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senit.app/Senit";
+			};
+			name = Release;
+		};
+		048A50EA20CB15600080E868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2PYB66VVW;
+				INFOPLIST_FILE = SenitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = npp.SenitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Senit;
+			};
+			name = Debug;
+		};
+		048A50EB20CB15600080E868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2PYB66VVW;
+				INFOPLIST_FILE = SenitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = npp.SenitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Senit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		048A50B620CB155E0080E868 /* Build configuration list for PBXProject "Senit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048A50E120CB15600080E868 /* Debug */,
+				048A50E220CB15600080E868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048A50E320CB15600080E868 /* Build configuration list for PBXNativeTarget "Senit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048A50E420CB15600080E868 /* Debug */,
+				048A50E520CB15600080E868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048A50E620CB15600080E868 /* Build configuration list for PBXNativeTarget "SenitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048A50E720CB15600080E868 /* Debug */,
+				048A50E820CB15600080E868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048A50E920CB15600080E868 /* Build configuration list for PBXNativeTarget "SenitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048A50EA20CB15600080E868 /* Debug */,
+				048A50EB20CB15600080E868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 048A50B320CB155E0080E868 /* Project object */;
+}
