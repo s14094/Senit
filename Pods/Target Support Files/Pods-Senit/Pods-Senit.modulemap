@@ -1,0 +1,6 @@
+framework module Pods_Senit {
+  umbrella header "Pods-Senit-umbrella.h"
+
+  export *
+  module * { export * }
+}
