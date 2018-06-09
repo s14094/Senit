@@ -10,6 +10,8 @@ import UIKit
 import SwiftyJSON
 import ObjectMapper
 import Moya
+import Foundation
+import Alamofire
 
 class LoginScreenViewController: UIViewController {
     
@@ -18,11 +20,19 @@ class LoginScreenViewController: UIViewController {
     @IBOutlet weak var _login_button: UIButton!
     
     
+    // Tuck this away somewhere where it'll be visible to anyone who wants to use it
+    var provider = MoyaProvider<AccountApi>()
+    
+
+
+    
     override func viewDidLoad() {
         _login_button.layer.cornerRadius = 5
         _login_button.layer.borderWidth = 1
         _login_button.layer.borderColor = UIColor.black.cgColor
         
+        
+        /*
         let preferences = UserDefaults.standard
         
         if(preferences.object(forKey: "session") != nil)
@@ -33,10 +43,35 @@ class LoginScreenViewController: UIViewController {
         {
             LoginToDo()
         }
-        
+        */
     }
     
     @IBAction func LoginButton(_ sender: Any) {
+        
+        provider.request(.zen(login: "login",password: "password")) { result in
+            switch result {
+            case let .success(moyaResponse):
+                do {
+                let data = moyaResponse.data // Data, your JSON response is probably in here!
+                let json = try moyaResponse.mapJSON()
+                let statusCode = moyaResponse.statusCode // Int - 200, 401, 500, etc
+                    
+                print(data)
+                print(json)
+                print(statusCode)
+                }
+                catch let error {
+                    print(error)
+                }
+
+
+            // do something in your app
+            case .failure(_): break
+                // TODO: handle the error == best. comment. ever.
+            }
+        }
+        
+        /*
         
         if(_login_button.titleLabel?.text == "Logout")
         {
@@ -57,11 +92,14 @@ class LoginScreenViewController: UIViewController {
         }
         
         DoLogin(username!, password!)
+ 
+ */
     }
+ 
     
     func DoLogin(_ user:String, _ psw:String)
     {
-        let url = URL(string: "localhost:8080/api/user")
+        let url = URL(string: "localhost:8080/api/user/login")
         let session = URLSession.shared
         
         let request = NSMutableURLRequest(url: url!)

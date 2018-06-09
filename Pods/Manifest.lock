@@ -1,34 +1,117 @@
 PODS:
   - Alamofire (4.7.2)
-  - Moya (11.0.2):
-    - Moya/Core (= 11.0.2)
-  - Moya/Core (11.0.2):
+  - BMPlayer (0.8.7):
+    - BMPlayer/Full (= 0.8.7)
+  - BMPlayer/Core (0.8.7)
+  - BMPlayer/Full (0.8.7):
+    - BMPlayer/Core
+    - NVActivityIndicatorView (~> 3.5)
+    - SnapKit (~> 3.2)
+  - BonMot (4.3.1)
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - HCSStarRatingView (1.5)
+  - Hero (1.2.0)
+  - Kingfisher (3.13.1)
+  - Mockingjay (2.0.1):
+    - Mockingjay/Core (= 2.0.1)
+    - Mockingjay/XCTest (= 2.0.1)
+  - Mockingjay/Core (2.0.1):
+    - URITemplate (~> 2.0)
+  - Mockingjay/XCTest (2.0.1):
+    - Mockingjay/Core
+  - Moya (9.0.0):
+    - Moya/Core (= 9.0.0)
+  - Moya/Core (9.0.0):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
+  - Nimble (7.1.2)
+  - NVActivityIndicatorView (3.7.0):
+    - NVActivityIndicatorView/Presenter (= 3.7.0)
+  - NVActivityIndicatorView/Presenter (3.7.0)
   - ObjectMapper (3.2.0)
+  - Quick (1.3.0)
   - Result (3.2.4)
+  - SnapKit (3.2.0)
   - SwiftyJSON (3.1.4)
+  - URITemplate (2.0.3)
+  - XLPagerTabStrip (7.0.0)
+  - YoutubeSourceParserKit (0.2.4)
 
 DEPENDENCIES:
-  - Moya (~> 11.0)
+  - BMPlayer (~> 0.8.6)
+  - BonMot (~> 4.3.1)
+  - ChameleonFramework (~> 2.1.0)
+  - HCSStarRatingView (~> 1.5)
+  - Hero (from `https://github.com/lkzhao/Hero`)
+  - Kingfisher (~> 3.0)
+  - Mockingjay
+  - Moya (~> 9.0)
+  - Nimble
   - ObjectMapper (~> 3.2)
+  - Quick
+  - SnapKit (~> 3.2.0)
   - SwiftyJSON (~> 3.0)
+  - XLPagerTabStrip (~> 7.0)
+  - YoutubeSourceParserKit (from `https://github.com/lennet/YoutubeSourceParserKit`, branch `master`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - BMPlayer
+    - BonMot
+    - ChameleonFramework
+    - HCSStarRatingView
+    - Kingfisher
+    - Mockingjay
     - Moya
+    - Nimble
+    - NVActivityIndicatorView
     - ObjectMapper
+    - Quick
     - Result
+    - SnapKit
     - SwiftyJSON
+    - URITemplate
+    - XLPagerTabStrip
+
+EXTERNAL SOURCES:
+  Hero:
+    :git: https://github.com/lkzhao/Hero
+  YoutubeSourceParserKit:
+    :branch: master
+    :git: https://github.com/lennet/YoutubeSourceParserKit
+
+CHECKOUT OPTIONS:
+  Hero:
+    :commit: 28e368c2d3457342859c0d9b54975a504fec7417
+    :git: https://github.com/lkzhao/Hero
+  YoutubeSourceParserKit:
+    :commit: 98f3bcf9886c20eefd82249a6cfbb3068ad86b80
+    :git: https://github.com/lennet/YoutubeSourceParserKit
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
-  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  BMPlayer: 5ba9e3f3d61ccc5a24ebd9cdc24901dcf28c98bc
+  BonMot: 043bb5a8834cc6d74e9d624742272b92385e0a27
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  HCSStarRatingView: 1d18f79654735514cd6f00e6d90e38cb6320dc31
+  Hero: be8356881052f1d7530042f3dc0a1bd26c7eb0ee
+  Kingfisher: ed9707a409cc47fddafbcd12a43a9757e3600af5
+  Mockingjay: 11a621880d2887f1775bdcf824341eb68f218450
+  Moya: cf5e6ee93af526532f92614004b8ad2ea60fd845
+  Nimble: 3835ba9f459daa6b347f8a8e110aaae8ca1920a8
+  NVActivityIndicatorView: d3738df7e2e476aca0ba6bf32a8c9fbcfc33d64b
   ObjectMapper: 5cccd2de6f253eda859df8116a5a554d9769e859
+  Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
+  XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
+  YoutubeSourceParserKit: d1506222a62718ed41f18ab52ebbc1b1d9ecabcc
 
-PODFILE CHECKSUM: 5243e2fa950c6de9e1fbd374b624dbe379465dfb
+PODFILE CHECKSUM: 9aa0464433d6c7d7382c7dc57101ba033591a0dc
 
 COCOAPODS: 1.5.3
