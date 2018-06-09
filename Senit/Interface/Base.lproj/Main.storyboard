@@ -36,7 +36,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JQ-OV-UuY">
                                 <rect key="frame" x="112" y="373" width="150" height="50"/>
@@ -60,7 +60,7 @@
                                 </constraints>
                                 <state key="normal" title="Wróć"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="2aL-iS-PRs"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToMainMenu" id="2aL-iS-PRs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wM9-CA-rub" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="29.600000000000001" y="-680.5097451274363"/>
+            <point key="canvasLocation" x="-382" y="-754"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="R7h-V5-VH7">
@@ -115,7 +115,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Senit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainMenuVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Senit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,6 +156,27 @@
                                     <segue destination="wM4-Iz-bq5" kind="presentation" id="a0K-n4-lL6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hii-us-qe8">
+                                <rect key="frame" x="0.0" y="20" width="120" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="MEz-QM-hjS"/>
+                                    <constraint firstAttribute="height" constant="60" id="nOi-cQ-f4i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="#{userName}"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mX6-nu-P4G">
+                                <rect key="frame" x="120" y="20" width="90" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Z3f-wp-9ag"/>
+                                    <constraint firstAttribute="height" constant="60" id="qKO-iI-574"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Wyloguj"/>
+                                <connections>
+                                    <action selector="logoutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1h3-jb-Qhu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -163,12 +184,22 @@
                             <constraint firstItem="CZO-fa-8E4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AWB-Ye-DHm"/>
                             <constraint firstItem="8z4-Yl-YRU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="D3J-aj-IQF"/>
                             <constraint firstItem="8z4-Yl-YRU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ExP-4M-riZ"/>
+                            <constraint firstItem="mX6-nu-P4G" firstAttribute="leading" secondItem="hii-us-qe8" secondAttribute="trailing" id="URH-nc-d7p"/>
+                            <constraint firstItem="hii-us-qe8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XF2-kJ-6S4"/>
                             <constraint firstItem="8z4-Yl-YRU" firstAttribute="leading" secondItem="CZO-fa-8E4" secondAttribute="trailing" id="agN-d7-T4s"/>
                             <constraint firstItem="cu4-19-3hy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bWZ-p4-Bgq"/>
                             <constraint firstItem="cu4-19-3hy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dIi-nu-M0a"/>
+                            <constraint firstItem="hii-us-qe8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iA0-C0-kKT"/>
+                            <constraint firstItem="mX6-nu-P4G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ypy-7z-h2V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="_loginButton" destination="CZO-fa-8E4" id="0Eu-4Q-Ari"/>
+                        <outlet property="_logoutButton" destination="mX6-nu-P4G" id="boy-tH-xdu"/>
+                        <outlet property="_registerButton" destination="8z4-Yl-YRU" id="Z6f-cb-MgZ"/>
+                        <outlet property="_userNickName" destination="hii-us-qe8" id="uvX-7L-mEN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

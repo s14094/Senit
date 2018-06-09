@@ -11,6 +11,7 @@ PODS:
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
+  - DropDown (2.3.2)
   - HCSStarRatingView (1.5)
   - Hero (1.2.0)
   - Kingfisher (3.13.1)
@@ -43,6 +44,7 @@ DEPENDENCIES:
   - BMPlayer (~> 0.8.6)
   - BonMot (~> 4.3.1)
   - ChameleonFramework (~> 2.1.0)
+  - DropDown
   - HCSStarRatingView (~> 1.5)
   - Hero (from `https://github.com/lkzhao/Hero`)
   - Kingfisher (~> 3.0)
@@ -62,6 +64,7 @@ SPEC REPOS:
     - BMPlayer
     - BonMot
     - ChameleonFramework
+    - DropDown
     - HCSStarRatingView
     - Kingfisher
     - Mockingjay
@@ -96,6 +99,7 @@ SPEC CHECKSUMS:
   BMPlayer: 5ba9e3f3d61ccc5a24ebd9cdc24901dcf28c98bc
   BonMot: 043bb5a8834cc6d74e9d624742272b92385e0a27
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  DropDown: 7f87abecc28f9b4edad810fe1211c5c018c257e5
   HCSStarRatingView: 1d18f79654735514cd6f00e6d90e38cb6320dc31
   Hero: be8356881052f1d7530042f3dc0a1bd26c7eb0ee
   Kingfisher: ed9707a409cc47fddafbcd12a43a9757e3600af5
@@ -112,6 +116,6 @@ SPEC CHECKSUMS:
   XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
   YoutubeSourceParserKit: d1506222a62718ed41f18ab52ebbc1b1d9ecabcc
 
-PODFILE CHECKSUM: 9aa0464433d6c7d7382c7dc57101ba033591a0dc
+PODFILE CHECKSUM: f2d23b3b269f5cb3cbd0f9b1a85fa1e755be22fd
 
 COCOAPODS: 1.5.3

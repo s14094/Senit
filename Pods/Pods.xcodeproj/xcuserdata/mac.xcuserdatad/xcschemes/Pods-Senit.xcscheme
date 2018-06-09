@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "30BEF0220FDC3E980CC5B15099759080"
+               BlueprintIdentifier = "494155D7BDBD29C3E1EF10490DF0BCCA"
                BuildableName = "Pods_Senit.framework"
                BlueprintName = "Pods-Senit"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "30BEF0220FDC3E980CC5B15099759080"
+            BlueprintIdentifier = "494155D7BDBD29C3E1EF10490DF0BCCA"
             BuildableName = "Pods_Senit.framework"
             BlueprintName = "Pods-Senit"
             ReferencedContainer = "container:Pods.xcodeproj">
