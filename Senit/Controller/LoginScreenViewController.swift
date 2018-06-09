@@ -13,6 +13,7 @@ import Moya
 import Foundation
 import Alamofire
 
+
 class LoginScreenViewController: UIViewController {
     
 
@@ -41,16 +42,27 @@ class LoginScreenViewController: UIViewController {
             switch result {
             case let .success(moyaResponse):
                 do {
-                    let data = moyaResponse.data // Data, your JSON response is probably in here!
+                    let returnData = moyaResponse.data // Data, your JSON response is probably in here!
                     let json = try moyaResponse.mapJSON()
                     let statusCode = moyaResponse.statusCode // Int - 200, 401, 500, etc
-                    //print(json)
+                    print(json)
+                    
+                    
+                    guard let responseJSON = result.value as? [String: AnyObject] else {
+                        print("errrrrror")
+                        return
+                    }
+
+
+                    let account = Mapper<AccountModel>().map(JSONObject: returnData)
                     
                     if (statusCode == 200){
                         print("zalogowano")
                         self.defaults.set(true, forKey: "isLogged")
-              
                         
+            
+                        
+                        print("account: ", account)
                         self.performSegue(withIdentifier: "goToMainMenu", sender: nil)
                         
                     }

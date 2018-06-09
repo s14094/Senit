@@ -8,10 +8,11 @@
 
 import UIKit
 import SwiftyJSON
-import ObjectMapper
+//import ObjectMapper
 import Moya
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var _registerButton: UIButton!
     @IBOutlet weak var _loginButton: UIButton!
@@ -26,6 +27,7 @@ class ViewController: UIViewController {
         checkLoginValue()
     }
     
+    let listOfCities = ["Gdansk", "Sopot", "Gdynia", "Warszawa"]
     let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
@@ -58,6 +60,17 @@ class ViewController: UIViewController {
             _logoutButton.setTitle("Wyloguj", for: .normal)
         }
         print("isLogged: ", isLogged)
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return listOfCities.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = listOfCities[indexPath.row]
+        
+        return(cell)
     }
 
     override func didReceiveMemoryWarning() {
