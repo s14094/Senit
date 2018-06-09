@@ -47,7 +47,7 @@ class LoginScreenViewController: UIViewController {
                     let statusCode = moyaResponse.statusCode // Int - 200, 401, 500, etc
                     print(json)
                     
-                    
+                    /*
                     guard let responseJSON = result.value as? [String: AnyObject] else {
                         print("errrrrror")
                         return
@@ -55,6 +55,7 @@ class LoginScreenViewController: UIViewController {
 
 
                     let account = Mapper<AccountModel>().map(JSONObject: returnData)
+ */
                     
                     if (statusCode == 200){
                         print("zalogowano")
@@ -62,7 +63,7 @@ class LoginScreenViewController: UIViewController {
                         
             
                         
-                        print("account: ", account)
+                        //print("account: ", account)
                         self.performSegue(withIdentifier: "goToMainMenu", sender: nil)
                         
                     }
